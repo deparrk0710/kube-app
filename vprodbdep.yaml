@@ -14,7 +14,7 @@ spec:
         - name: dbcontainer
           image: deparrk/vprofiledb:V1
           args:
-            - "ignore-db-dir=lost+found"
+            - "--ignore-db-dir=lost+found"
           volumeMounts:
             - mountPath: /var/lib/mysql
               name: vprodb-data
